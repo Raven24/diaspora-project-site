@@ -49,9 +49,9 @@
   .container
     .row
       %h1
-        Social freedom.
+        = t('pages.index.headline')
       %p.lead
-        Diaspora* is a fun and creative community that puts you in control.
+        = t('pages.index.subline')
 
     .row
       #carousel
@@ -59,32 +59,31 @@
           =image_tag 'featured-users.png', :class => 'featured-users'
           .info-text.hidden
             %h2
-              Creative Community
+              = t('pages.index.carousel.featured_users.headline')
             %h4
-              Meet people from all over the world who love the internet as much as you do.
+              = t('pages.index.carousel.featured_users.text')
             %h4.call_to_action
-              = link_to 'Learn More >', '#features'
+              = link_to t('pages.index.carousel.featured_users.morelink'), '#features'
 
         #carousel-control
           = image_tag 'distributed.png', :class => 'distributed'
           .info-text.hidden
             %h2
-              Own your data
+              = t('pages.index.carousel.control.headline')
             %h4
-              Connecting socially is human nature.  You shouldn't have to trade away your personal information to participate.
+              = t('pages.index.carousel.control.text')
             %h4.call_to_action
-              = link_to 'Own your Data with Diaspora* >', '#benifits'
+              = link_to t('pages.index.carousel.control.morelink'), '#benifits'
 
         #carousel-best-of-web
           = image_tag 'cubbies-screenshot.png', :class => "cubbies-screenshot"
           .info-text.hidden
             %h2
-              Best of the Web
+              = t('pages.index.carousel.beset_of_web.headline')
             %h4
-              Applications that enable you to discover & share cool stuff throughout the web.
-              Cubbi.es is our first.
+              = t('pages.index.carousel.beset_of_web.text')
             %h4.call_to_action
-              = link_to 'Explore Apps >', '#apps'
+              = link_to t('pages.index.carousel.beset_of_web.morelink'), '#apps'
 
 .container
   .inset
@@ -93,9 +92,9 @@
   %section#features
     .page-header
       %h1
-        Features our community loves
+        = t('pages.index.features.headline')
         %small
-          We think you'll love 'em too.
+          = t('pages.index.features.subline')
 
     .row
       .span4
@@ -110,26 +109,26 @@
     .row
       .span4
         %h4
-          Hashtags
+          = t('pages.index.features.hashtags.headline')
         %p
-          Hashtags allow you to label and follow your interests.  They're also a great way to meet fun and interesting new people on Diaspora*.
+          = t('pages.index.features.hashtags.description')
       .span4
         %h4
-          Reshare
+          = t('pages.index.features.reshare.headline')
         %p
-          Why not reshare a post you love with others?  Diaspora* makes it easy to spread ideas via reshare.
+          = t('pages.index.features.reshare.description')
 
       .span4
         %h4
-          Mentions
+          = t('pages.index.features.mentions.headline')
         %p
-          Want to get the attention of an amazing community member? just @-mention them!
+          = t('pages.index.features.mentions.description')
 
       .span4
         %h4
-          Love
+          = t('pages.index.features.love.headline')
         %p
-          Show your appreciation for something you love by ♥-ing it.
+          = t('pages.index.features.love.description')
 
     %hr
     .clearfix
@@ -138,15 +137,15 @@
     .row
       .span8
         %h4
-          Personal Profile
+          = t('pages.index.features.personal_profile.headline')
         %p
-          Say whatever you want about who you are.  Diaspora* doesn't force your awesomeness into restrictive categories
+          = t('pages.index.features.personal_profile.description')
 
       .span8
         %h4
-          Aspects
+          = t('pages.index.features.aspects.headline')
         %p
-          Ever wanted to to share something with just a certain group of people?  Diaspora* pioneered Aspects, the original system for sharing things with just the people you want.  Of course, you can still tell the whole world too, if you want to.
+          = t('pages.index.features.aspects.description')
 
     .clearfix
       %br
@@ -156,9 +155,9 @@
         = image_tag('services.png')
       .span12
         %h4
-          Social network integration
+          = t('pages.index.features.social_network_integration.headline')
         %p
-          Diaspora* lets you stay connected with your friends, even if they're not on Diaspora* yet. Simply connect your account to other major services, then use Diaspora* as your home base to post to your profiles on these other services too. Diaspora* currently supports cross-posting to your Facebook, Twitter, and Tumblr accounts, with more to come soon.
+          = t('pages.index.features.social_network_integration.description')
 
         %br
         %br
@@ -168,10 +167,10 @@
         =image_tag('question.png')
       .span12
         %h4
-          We're here to help
+          = t('pages.index.features.help.headline')
         %p
-          Diaspora is an international community of people who are passionate about making the social web work for everyone. We're excited to help.
-          = link_to "Just ask.", get_satisfaction_link
+          = t('pages.index.features.help.description')
+          = link_to t('pages.index.features.help.justask'), get_satisfaction_link
 
         %br
         %br
@@ -181,60 +180,54 @@
     .row#small_features
       .span4
         %h6
-          Bookmarklet
+          = t('pages.index.features.bookmarklet.headline')
 
         %p
-          Use Diaspora*'s bookmarklet to discover fun content around the web and share it with whomever you'd like.
-
-      .span4
-        %h6
-          Hi-res photos
-        %p
-          Upload and share high-resolution photos with whomever you please.
+          = t('pages.index.features.bookmarklet.description')
 
       .span4
         %h6
-          Join a pod
+          = t('pages.index.features.photos.headline')
         %p
-          Diaspora pods mean you can get an account anywhere you would like.
-          = link_to 'JoinDiapsora', 'https://joindiaspora.com'
-          and
-          = link_to 'Diasp.org', 'https://diasp.org'
-          are two of the largest, but you can sign up at 
-          = link_to 'any open community pod.', pod_listing_link
+          = t('pages.index.features.photos.description')
+
       .span4
         %h6
-          Lots more!
+          = t('pages.index.features.join_a_pod.headline')
+        %p
+          = t('pages.index.features.join_a_pod.description_html', :joindiasporalink => link_to('JoinDiapsora', 'https://joindiaspora.com'), :diasporglink => (link_to 'Diasp.org', 'https://diasp.org'), :podlistlink => (link_to t('pages.index.features.join_a_pod.podlist_link'), pod_listing_link))
+
+      .span4
+        %h6
+          = t('pages.index.features.lots_more.headline')
         %p
           %strong
-            Ready to use Diaspora*?
-          Then get an account on a community pod.  It's fast, easy, and free.
-          = link_to "Sign up", pod_listing_link, :class => "btn primary"
+            = t('pages.index.features.lots_more.description')
+          = link_to t('pages.index.features.lots_more.signup_button'), pod_listing_link, :class => "btn primary"
 
   %section#apps
     .page-header
       %h1
-        Awesome Apps
+        = t('pages.index.awesome_apps.headline')
     .row
       
       .span8
         .row
           .span8
             %h4
-              One account to rule them all.
+              = t('pages.index.awesome_apps.one_account.headline')
             %p
-              Log In With Diaspora*, our own decentrialized authentication system, can be used with any Diaspora pod.  That means any cool new applications you connect to online will share with you you want, as well as giving you a copy of the data you create.
+              = t('pages.index.awesome_apps.one_account.description')
             %p
-              If you are developer and want to intergrate Diaspora* into your application, learn more at:
+              = t('pages.index.awesome_apps.one_account.integrate')
               = link_to "GitHub", 'https://github.com/diaspora/diaspora-client'
         .row
           .span8
             %h4
-              Collect the Web with Cubbi.es
+              = t('pages.index.awesome_apps.cubbies.headline')
             %p
               = link_to 'Cubbi.es', 'http://cubbi.es'
-              is our first (of many) applications for Diaspora*.  It also is the best way to collect photos around the web. 
-              In fact, Diaspora* users tell us that Cubbi.es is the best way to save photos around the web.
+              = t('pages.index.awesome_apps.cubbies.description')
       .span8
         %br
         %br
@@ -243,7 +236,7 @@
   %section#benifits
     .page-header
       %h1
-        Own your data
+        = t('pages.index.benefits.headline')
 
     .row
     .clearfix
@@ -255,12 +248,9 @@
         =image_tag('lock.png')
       .span14
         %h4
-          Host it yourself
+          = t('pages.index.benefits.host_yourself.headline')
         %p
-          Now you don't have to settle for having your data on someone else's server. Since Diaspora is completely free software, you can
-          = link_to "grab the code", code_link 
-          and host it wherever you want. We're constantly making it easier for individuals to host their own pods on Diaspora*.
-
+          = t('pages.index.benefits.host_yourself.description_html', :grab_the_code => (link_to "grab the code", code_link ))
 
     .clearfix
       %br
@@ -271,54 +261,51 @@
         = image_tag('download.png')
       .span6
         %h4
-          Export your data
+          = t('pages.index.benefits.export_your_data.headline')
           %span.label.warning
-            coming soon!
+            = t('coming_soon')
         %p
-          Download all of your data in standard formats that can be used in other places.
+          = t('pages.index.benefits.export_your_data.description')
       .span2
         = image_tag('two_asterisks.png')
       .span6
         %h4
-          Move Pods
+          = t('pages.index.benefits.move_pods.headline')
           %span.label.warning
-            coming soon!
+            = t('coming_soon')
         %p
-          Get started on a 
-          = link_to 'community pod',pod_listing_link
-          and then move all of your social data to a pod you control. 
-          Diaspora*'s distributed design means that you will never have to sacrifice control of your data to stay connected.
+          = t('pages.index.benefits.move_pods.description_html', :pod_list_link => (link_to t('pages.index.benefits.move_pods.community_pod'),pod_listing_link))
 
   %section#community
     .page-header
       %h1
-        Diaspora* is a community effort
+        = t('pages.index.community_effort.headline')
     %p
-      Diaspora* is powered by passionate people doing fun things together.  Find out how what you love to do can help make Diaspora* better.
-      = link_to 'Learn More', get_involved_path
+      = t('pages.index.community_effort.description')
+      = link_to t('learn_more'), get_involved_path
 
     .row
       .span8
         %h2
-          Contribute code
+          = t('pages.index.community_effort.contribute.headline')
 
         %p
-          Grabbing the source code is simple.  Clone down the repository and poke around:
+          = t('pages.index.community_effort.contribute.description')
           %code
             git clone git://github.com/diaspora/diaspora.git
 
         %p
-          = link_to "View the source on github »", code_link, :class => 'btn primary'
+          = link_to t('pages.index.community_effort.contribute.view_source_link'), code_link, :class => 'btn primary'
 
 
       .span8
         %h2
-          Donate
+          = t('pages.index.community_effort.donate.headline')
 
         %p
-          Your donations keep us going and enable us to keep developing more amazing features for Diaspora*. Please give generously to help us build a new social web where you're in control.
+          = t('pages.index.community_effort.donate.description')
 
-        = link_to "Donate", donate_path, :class => 'btn success', :onClick => "_gaq.push(['_trackEvent', 'Donate Button', 'Click', 'page', '#{params[:action]}_bottom']);" 
+        = link_to t('pages.index.community_effort.donate.button'), donate_path, :class => 'btn success', :onClick => "_gaq.push(['_trackEvent', 'Donate Button', 'Click', 'page', '#{params[:action]}_bottom']);"
 
       /=link_to "join our mailing list. you won't regret it:"
 

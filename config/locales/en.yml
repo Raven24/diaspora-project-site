@@ -1,5 +1,94 @@
-# Sample localization file for English. Add more files in this directory for other locales.
-# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
-
 en:
-  hello: "Hello world"
+  coming_soon: "coming soon!"
+  learn_more: "Learn More"
+  pages:
+    index:
+      headline: "Social freedom."
+      subline: "Diaspora* is a fun and creative community that puts you in control."
+      carousel:
+        featured_users:
+          headline: "Creative Community"
+          text: "Meet people from all over the world who love the internet as much as you do."
+          morelink: "Learn More >"
+        control:
+          headline: "Own your data"
+          text: "Connecting socially is human nature.  You shouldn't have to trade away your personal information to participate."
+          morelink: "Own your Data with Diaspora* >"
+        beset_of_web:
+          headline: "Best of the Web"
+          text: "Applications that enable you to discover & share cool stuff throughout the web. Cubbi.es is our first."
+          morelink: "Explore Apps >"
+      features:
+        headline: "Features our community loves"
+        subline: "We think you'll love 'em too."
+        hashtags:
+          headline: "Hashtags"
+          description: "Hashtags allow you to label and follow your interests.  They're also a great way to meet fun and interesting new people on Diaspora*."
+        reshare:
+          headline: "Reshare"
+          description: "Why not reshare a post you love with others?  Diaspora* makes it easy to spread ideas via reshare."
+        mentions:
+          headline: "Mentions"
+          description: "Want to get the attention of an amazing community member? just @-mention them!"
+        love:
+          headline: "Love"
+          description: "Show your appreciation for something you love by ♥-ing i"
+        personal_profile:
+          headline: "Personal Profile"
+          description: "Say whatever you want about who you are.  Diaspora* doesn't force your awesomeness into restrictive categories"
+        aspects:
+          headline: "Aspects"
+          description: "Ever wanted to to share something with just a certain group of people?  Diaspora* pioneered Aspects, the original system for sharing things with just the people you want.  Of course, you can still tell the whole world too, if you want to."
+        social_network_integration:
+          headline: "Social network integration"
+          description: "Diaspora* lets you stay connected with your friends, even if they're not on Diaspora* yet. Simply connect your account to other major services, then use Diaspora* as your home base to post to your profiles on these other services too. Diaspora* currently supports cross-posting to your Facebook, Twitter, and Tumblr accounts, with more to come soon."
+        help:
+          headline: "We're here to help"
+          description: "Diaspora is an international community of people who are passionate about making the social web work for everyone. We're excited to help."
+          justask: "Just ask"
+        bookmarklet:
+          headline: "Bookmarklet"
+          description: "Use Diaspora*'s bookmarklet to discover fun content around the web and share it with whomever you'd like."
+        photos:
+          headline: "Hi-res photos"
+          description: "Upload and share high-resolution photos with whomever you please."
+        join_a_pod:
+          headline: "Join a pod"
+          description_html: "Diaspora pods mean you can get an account anywhere you would like. %{joindiasporalink} and %{diasporglink} are two of the largest, but you can sign up at %{podlistlink}"
+          podlist_link: "any open community pod."
+        lots_more:
+          headline: "Lots more!"
+          description: "Ready to use Diaspora*? Then get an account on a community pod. It's fast, easy, and free."
+          signup_button: "Sign up"
+      awesome_apps:
+        headline: "Awesome Apps"
+        one_account:
+          headline: "One account to rule them all."
+          description: "Log In With Diaspora*, our own decentrialized authentication system, can be used with any Diaspora pod.  That means any cool new applications you connect to online will share with you you want, as well as giving you a copy of the data you create."
+          integrate: "If you are developer and want to intergrate Diaspora* into your application, learn more at:"
+        cubbies:
+          headline: "Collect the Web with Cubbi.es"
+          description: "is our first (of many) applications for Diaspora*.  It also is the best way to collect photos around the web. In fact, Diaspora* users tell us that Cubbi.es is the best way to save photos around the web."
+      benefits:
+        headline: "Own your data"
+        host_yourself:
+          headline: "Host it yourself"
+          description_html: "Now you don't have to settle for having your data on someone else's server. Since Diaspora is completely free software, you can %{grab_the_code} and host it wherever you want. We're constantly making it easier for individuals to host their own pods on Diaspora*."
+        export_your_data:
+          headline: "Export your data"
+          description: "Download all of your data in standard formats that can be used in other places."
+        move_pods:
+          headline: "Move Pods"
+          description_html: "Get started on a %{pod_list_link} and then move all of your social data to a pod you control. Diaspora*'s distributed design means that you will never have to sacrifice control of your data to stay connected."
+          community_pod: "community pod"
+      community_effort:
+        headline: "Diaspora* is a community effort"
+        description: "Diaspora* is powered by passionate people doing fun things together.  Find out how what you love to do can help make Diaspora* better."
+        contribute:
+          headline: "Contribute code"
+          description: "Grabbing the source code is simple.  Clone down the repository and poke around:"
+          view_source_link: "View the source on github »"
+        donate:
+          headline: "Donate"
+          description: "Your donations keep us going and enable us to keep developing more amazing features for Diaspora*. Please give generously to help us build a new social web where you're in control."
+          button: "Donate"

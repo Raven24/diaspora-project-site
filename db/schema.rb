@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110825222750) do
+ActiveRecord::Schema.define(:version => 20110825221952) do
 
   create_table "contributors", :force => true do |t|
     t.string   "name"
